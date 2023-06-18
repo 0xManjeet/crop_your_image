@@ -384,7 +384,7 @@ class _CropEditorState extends State<_CropEditor> {
       _resizeWith(widget.aspectRatio, widget.initialArea);
     }
 
-    if (widget.interactive) {
+    if (widget.interactive && false) {
       final initialScale = calculator.scaleToCover(screenSize, _imageRect);
       _applyScale(initialScale);
     }
